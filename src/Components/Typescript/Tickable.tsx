@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { memo, FC } from "react";
 import 'font-awesome/css/font-awesome.min.css';
 import styled from 'styled-components';
 import usePrevious from "../../Hooks/usePrevious";
@@ -36,4 +36,4 @@ const TickableTS: FC<Tickable> = ({ value }) => {
   );
 }
 
-export default TickableTS;
+export default memo(TickableTS);
